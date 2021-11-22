@@ -1,11 +1,10 @@
-import React from 'react';
-import './Joke.css';
+import './joke.css';
 
 const Joke = ({ blague }) => {
-  console.log(blague);
   return (
     <div className="design">
-      <h1>Blague</h1>
+      <h3>{blague.setup}</h3>
+      <p className="chute">{blague.delivery}</p>
     </div>
   );
 };

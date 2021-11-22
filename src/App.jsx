@@ -1,10 +1,13 @@
-import React from 'react';
 import Joke from './components/Joke';
+import blagues from './data/jokes';
 
 function App() {
+  console.log(blagues);
   return (
     <div className="App">
-      <Joke {blagues.setup} />
+      {blagues.map((blague) => (
+        <Joke blague={blague} chute="Ceci est la chute" />
+      ))}
     </div>
   );
 }
