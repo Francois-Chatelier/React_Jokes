@@ -1,10 +1,10 @@
 import './joke.css';
 
-const Joke = ({ blague }) => {
+const Joke = ({ blague, chute }) => {
   return (
     <div className="design">
-      <h3>{blague.setup}</h3>
-      <p className="chute">{blague.delivery}</p>
+      <h3>{blague}</h3>
+      <p className="chute">{chute}</p>
     </div>
   );
 };

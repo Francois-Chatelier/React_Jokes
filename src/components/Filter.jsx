@@ -9,7 +9,6 @@ const Filter = ({
   withDelivery,
   setWithDelivery,
 }) => {
-  console.log(Filter);
   return (
     <div className="navbar">
       <div>
